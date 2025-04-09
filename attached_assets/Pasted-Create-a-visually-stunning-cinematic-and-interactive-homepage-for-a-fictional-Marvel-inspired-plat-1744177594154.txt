@@ -1,0 +1,157 @@
+Create a visually stunning, cinematic, and interactive homepage for a fictional Marvel-inspired platform titled "Chronoverse".
+
+🎯 Objective:
+Design an immersive landing experience that showcases four major Marvel characters:
+
+Iron Man
+
+Spider-Man
+
+Dr. Doom
+
+Knull
+
+These characters should be laid out horizontally, side-by-side, each occupying 25% width of the viewport. The homepage must be highly interactive, featuring 3D models, animated borders, looping videos or GIFs, hover effects, and buttery-smooth transitions.
+
+🧠 Key Requirements
+1. 🎨 Theme & Visual Style
+Embrace a Marvel Universe aesthetic with a dark cosmic theme.
+
+Use a bold, cinematic color palette:
+
+Deep black
+
+Glowing red
+
+Metallic gold
+
+Cosmic purple
+
+Emerald green
+
+UI/UX styling must include:
+
+Bold fonts
+
+Holographic/glitch effects
+
+Tech-style buttons
+
+Layered environments for depth
+
+Optional: Add ambient sound or background music per character (with on/off toggle).
+
+Place a Chronoverse logo at the top center, animated with a Marvel-style reveal effect (e.g., glowing pulse, cosmic energy flare).
+
+2. 🧱 Layout & Design Concept
+Fullscreen layout with no scroll required initially.
+
+Divide the screen into four horizontal sections (each 25% width).
+
+Each section features:
+
+One of the four characters
+
+A 3D model, GIF, or looping video
+
+Animated glowing borders matching the character’s theme
+
+The character’s name in large, stylized, animated typography
+
+3. 🦸 Character Presentation
+For each of the four character blocks:
+
+Use glTF/GLB 3D models or high-quality WebM/GIF videos.
+
+Integrate interactive or autoplay animations:
+
+Iron Man: Suit-up animation or Arc Reactor pulse
+
+Spider-Man: Swinging or wall crawling
+
+Dr. Doom: Spell casting or shield summon
+
+Knull: Symbiote tendrils or darkness wave
+
+Animate character names with styles such as:
+
+Slide-in
+
+Glitch effect
+
+Glowing letters
+
+Flame burst
+
+4. 🌀 Animation & Interactivity
+Use hardware-accelerated, buttery smooth transitions.
+
+Leverage animation libraries: GSAP, Framer Motion, Three.js, or Lottie.
+
+Hover Effects per character section:
+
+Parallax tilt or subtle zoom
+
+Themed aura/particle burst (e.g., sparks, webs, energy)
+
+Text or name glow animations
+
+Click Effects (optional for future scope):
+
+Expand section into a fullscreen cinematic modal with character lore or gallery
+
+5. 📱 Responsiveness
+Desktop: Four characters in a single horizontal line
+
+Tablet: Two rows, two characters per row
+
+Mobile (optional): Single-column layout with vertical scroll; preserve animations and responsiveness
+
+6. ⚙️ Performance & Optimization
+Use lazy-loading for all 3D models and videos
+
+Optimize assets: WebM, WebP, glTF for reduced load time
+
+Implement GPU-accelerated animations and smooth transitions
+
+Add fallback static images for older/unsupported devices
+
+🛠️ Tech Stack Suggestions
+Frontend:
+
+React / Next.js (preferred)
+
+Or Vanilla HTML5 + CSS + JavaScript
+
+Use standard CSS or Bootstrap for layout when needed
+
+3D Model & Rendering:
+
+Three.js
+
+react-three-fiber
+
+<model-viewer> for easy 3D embeds
+
+Animations:
+
+GSAP
+
+Framer Motion
+
+Lottie for micro-animations
+
+Assets:
+
+Use glTF/GLB for 3D models
+
+WebM for looping videos
+
+WebP / GIF as visual backups
+
+Design System:
+
+Tailwind CSS (preferred for utility-first styling)
+
+Or styled-components for scoped component styles
+
