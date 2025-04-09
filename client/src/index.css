@@ -8,60 +8,60 @@
   }
 
   :root {
-    --background: 240 25% 5%;
+    --background: 0 0% 5%;
     --foreground: 0 0% 100%;
-    --card: 240 25% 8%;
+    --card: 0 0% 8%;
     --card-foreground: 0 0% 100%;
-    --popover: 240 25% 8%;
+    --popover: 0 0% 8%;
     --popover-foreground: 0 0% 100%;
-    --primary: 358 80% 45%;
+    --primary: 358 85% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 50 100% 50%;
-    --secondary-foreground: 240 10% 10%;
-    --muted: 240 5% 20%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 270 70% 50%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 358 85% 45%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 100% 50%;
+    --destructive: 0 100% 45%;
     --destructive-foreground: 0 0% 100%;
-    --border: 240 5% 25%;
-    --input: 240 5% 20%;
-    --ring: 358 80% 45%;
-    --sidebar-background: 240 25% 5%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 358 85% 40%;
+    --sidebar-background: 0 0% 7%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 358 80% 45%;
+    --sidebar-primary: 358 85% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 270 70% 50%;
+    --sidebar-accent: 358 85% 45%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 240 5% 25%;
-    --sidebar-ring: 358 80% 45%;
-    --radius: 0.5rem;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 358 85% 40%;
+    --radius: 0.3rem;
   }
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    background-color: #080810;
+    background-color: #0a0a0a;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
 
-  /* Character specific colors */
+  /* Character specific colors - Marvel-inspired */
   :root {
     /* Iron Man Colors */
-    --ironman-primary: 358 80% 45%;
-    --ironman-secondary: 50 100% 50%;
+    --ironman-primary: 358 85% 45%;
+    --ironman-secondary: 45 100% 50%;
     
     /* Spider-Man Colors */
-    --spiderman-primary: 358 73% 42%;
-    --spiderman-secondary: 220 64% 30%;
+    --spiderman-primary: 358 85% 40%;
+    --spiderman-secondary: 220 70% 35%;
     
     /* Dr. Doom Colors */
-    --drdoom-primary: 147 48% 19%;
-    --drdoom-secondary: 0 0% 75%;
+    --drdoom-primary: 140 50% 20%;
+    --drdoom-secondary: 0 0% 80%;
     
     /* Knull Colors */
-    --knull-primary: 264 83% 50%;
+    --knull-primary: 270 85% 50%;
     --knull-secondary: 0 0% 7%;
   }
 }
@@ -301,6 +301,142 @@
 
 .character-container:hover .particles {
   opacity: 1;
+}
+
+/* Marvel-inspired tech interface effects */
+.tech-interface-overlay {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* Marvel-inspired HUD elements */
+.hud-element {
+  position: absolute;
+  background: linear-gradient(135deg, rgba(212, 32, 38, 0.1) 0%, rgba(212, 32, 38, 0.05) 100%);
+  border: 1px solid rgba(212, 32, 38, 0.3);
+  box-shadow: 0 0 10px rgba(212, 32, 38, 0.5) inset;
+  backdrop-filter: blur(2px);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 3px;
+  z-index: 5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Marvel-inspired glitch effect for text */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-shadow: 
+    0 0 1px rgba(212, 32, 38, 0.5),
+    0 0 3px rgba(212, 32, 38, 0.3),
+    0 0 5px rgba(212, 32, 38, 0.2);
+  animation: textGlitch 4s infinite;
+}
+
+@keyframes textGlitch {
+  0%, 100% { transform: none; opacity: 1; }
+  7% { transform: skew(-0.5deg, -0.9deg); opacity: 0.75; }
+  10% { transform: none; opacity: 1; }
+  20% { transform: skew(0.8deg, -0.1deg); opacity: 0.9; }
+  23% { transform: none; opacity: 1; }
+  50% { transform: none; opacity: 1; }
+  62% { transform: skew(-1deg, 0.2deg); opacity: 0.8; }
+  65% { transform: none; opacity: 1; }
+}
+
+/* Marvel-inspired button styles */
+.marvel-button {
+  background: linear-gradient(135deg, rgba(212, 32, 38, 0.2) 0%, rgba(212, 32, 38, 0.3) 100%);
+  border: 1px solid rgba(212, 32, 38, 0.5);
+  box-shadow: 0 0 10px rgba(212, 32, 38, 0.4);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.marvel-button:hover {
+  background: linear-gradient(135deg, rgba(212, 32, 38, 0.3) 0%, rgba(212, 32, 38, 0.5) 100%);
+  box-shadow: 0 0 20px rgba(212, 32, 38, 0.6);
+  transform: translateY(-2px);
+}
+
+.marvel-button:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.5s ease;
+}
+
+.marvel-button:hover:before {
+  opacity: 0.2;
+  transform: scale(1);
+}
+
+/* Red cosmic background */
+.bg-marvel-cosmos {
+  background-image: url('/src/assets/images/marvel-background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-marvel-cosmos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 70%);
+  z-index: 1;
+}
+
+.bg-marvel-cosmos::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 2;
+}
+
+/* Character card with metallic border */
+.character-card {
+  border: 1px solid rgba(212, 32, 38, 0.5);
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%);
+  box-shadow: 
+    0 0 0 1px rgba(212, 32, 38, 0.3),
+    0 0 20px rgba(212, 32, 38, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.character-card:hover {
+  box-shadow: 
+    0 0 0 1px rgba(212, 32, 38, 0.6),
+    0 0 30px rgba(212, 32, 38, 0.6);
+  transform: translateY(-5px);
 }
 
 /* Responsive Grid */
