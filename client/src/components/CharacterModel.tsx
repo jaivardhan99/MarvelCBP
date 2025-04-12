@@ -22,7 +22,8 @@ export default function CharacterModel({ model, alt, hovered }: CharacterModelPr
         alt={alt}
         className="w-full h-full object-cover object-center"
         style={{
-          objectPosition: 'center 15%'
+          objectPosition: 'center 10%',
+          height: '100%'
         }}
       />
       
