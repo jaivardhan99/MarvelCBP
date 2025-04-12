@@ -61,6 +61,5 @@ export default function IronManPage() {
         </motion.div>
       </motion.div>
     </div>
-  </div>
   );
 }
