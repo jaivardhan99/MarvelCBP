@@ -2,8 +2,6 @@
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
-import IronManScene from '@/components/IronManScene';
-
 export default function IronManPage() {
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -20,14 +18,6 @@ export default function IronManPage() {
         animate={{ opacity: 1 }}
         className="relative z-20 container mx-auto px-4 py-8"
       >
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="mb-8"
-        >
-          <IronManScene />
-        </motion.div>
         <motion.h1 
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
