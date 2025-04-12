@@ -397,6 +397,24 @@
 
 /* Red cosmic background */
 .bg-marvel-cosmos {
+
+.iron-man-page {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/243/996/878/iron-man-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.tech-card {
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
   background-image: url('/src/assets/images/marvel-background.png');
   background-size: cover;
   background-position: center;
