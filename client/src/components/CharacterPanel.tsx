@@ -130,7 +130,7 @@ export default function CharacterPanel({ character }: CharacterPanelProps) {
                   boxShadow: `0 0 15px ${character.glowColor}` 
                 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => character.id === 'ironman' && window.location.href = '/iron-man'}
+                onClick={() => { if (character.id === 'ironman') window.location.href = '/iron-man'; }}
               >
                 ACCESS FILE
               </motion.button>
