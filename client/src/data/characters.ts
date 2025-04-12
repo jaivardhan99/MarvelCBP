@@ -1,3 +1,4 @@
+
 export interface Character {
   id: string;
   name: string;
@@ -28,13 +29,13 @@ export const characters: Character[] = [
     id: 'spiderman',
     name: 'SPIDER-MAN',
     description: 'With great power comes great responsibility. Peter Parker swings through the multiverse protecting the innocent.',
-    model: 'https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=600&h=800&q=80',
+    model: '/attached_assets/image_1744180591908.png',
     containerClass: 'spider-man-container',
     borderClass: 'spider-man-border',
     nameColor: 'text-[#D42026]',
     buttonClass: 'bg-[#D42026]/30 text-white border border-[#D42026] hover:bg-[#D42026]/50',
     glowColor: 'rgba(212, 32, 38, 0.7)',
-    overlayImage: 'https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=800&q=80'
+    overlayImage: '/attached_assets/image_1744180591908.png'
   },
   {
     id: 'drdoom',
@@ -52,12 +53,12 @@ export const characters: Character[] = [
     id: 'knull',
     name: 'KNULL',
     description: 'God of the Symbiotes, Knull commands darkness itself, threatening to consume all life across the universe.',
-    model: 'https://images.unsplash.com/photo-1559163179-3fd017552229?auto=format&fit=crop&w=600&h=800&q=80',
+    model: '/attached_assets/image_1744180591908.png',
     containerClass: 'knull-container',
     borderClass: 'knull-border',
     nameColor: 'text-[#5E17EB]',
     buttonClass: 'bg-[#5E17EB]/30 text-white border border-[#5E17EB] hover:bg-[#5E17EB]/50',
     glowColor: 'rgba(94, 23, 235, 0.7)',
-    overlayImage: 'https://images.unsplash.com/photo-1520034475321-cbe63696469a?auto=format&fit=crop&w=800&q=80'
+    overlayImage: '/attached_assets/image_1744180591908.png'
   }
 ];
