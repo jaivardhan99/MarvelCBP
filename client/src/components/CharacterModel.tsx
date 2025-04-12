@@ -27,9 +27,10 @@ export default function CharacterModel({ model, alt, hovered }: CharacterModelPr
         }}
       />
       
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent/30" />
       {hovered && (
         <motion.div 
-          className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+          className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
