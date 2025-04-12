@@ -36,7 +36,7 @@ export default function CharacterPanel({ character }: CharacterPanelProps) {
       
       <div className={borderClass}>
         {/* Character Model/Image with enhanced effects */}
-        <div className="character-image relative w-full h-4/5 overflow-hidden flex items-center justify-center">
+        <div className="character-image relative w-full h-[85%] overflow-hidden flex items-center justify-center">
           <CharacterModel 
             model={character.model} 
             alt={character.name} 

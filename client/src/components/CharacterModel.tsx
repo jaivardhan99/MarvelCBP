@@ -20,10 +20,10 @@ export default function CharacterModel({ model, alt, hovered }: CharacterModelPr
       <img 
         src={model}
         alt={alt}
-        className="w-full h-full object-cover object-center"
+        className="w-full h-full object-cover"
         style={{
-          objectPosition: 'center 10%',
-          height: '100%'
+          objectFit: 'cover',
+          objectPosition: 'center center'
         }}
       />
       
